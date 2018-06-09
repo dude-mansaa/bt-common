@@ -380,7 +380,7 @@ static void create_sessions(struct esp32_gatts_connection_entry *ce) {
   conn_params.latency = 0;
   conn_params.max_int = 0x50; /* max_int = 0x50*1.25ms = 100ms */
   conn_params.min_int = 0x30; /* min_int = 0x30*1.25ms = 60ms */
-  conn_params.timeout = 400;  /* timeout = 400*10ms = 4000ms */
+  conn_params.timeout = 4000;  /* timeout = 400*10ms = 4000ms */
   esp_ble_gap_update_conn_params(&conn_params);
 }
 
